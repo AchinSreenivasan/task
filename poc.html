@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>POC</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("#name").focus(function(){
+$(this).css("background-color","aqua");
+});
+ $("input").blur(function(){
+ $(this).css("background-color","green");
+});
+
+$("#b1").click(function(){
+ $("#id1").hide(2657);
+});
+
+  $("#b2").click(function(){
+    $("#id2").toggle();
+  });
+
+$("#b3").dblclick(function(){
+ $("#id3").css("font-family","comic sans ms").slideUp(2849).slideDown(2257);
+});
+
+$("#b4").click(function(){
+    $("#i4").hide(3062, function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+
+});
+
+</script>
+</head>
+<body>
+<p>Focus nd blur functions are used</p><br>
+Name:<input type="text" id="name"><br>
+
+<p id="id1">Hiding function used here<br>MTC Stands for Metropolitan Transport Corporation.This is a state-run corporation providing bus connectivity to Chennai.</p>
+<button id="b1">CLICK TO HIDE</button>
+
+<p id="id2">Toggle function is used to hide some textand show hidden text<br>The "Aarupadai Veedu" are 6 Shrines of Lord Muruga that are directly associated with His life.Pazhani(Dindigul distt),Thiruparankundram(Madurai Distt),Thiruchendur(Thoothukudi distt),Swamimalai(Thanjavur distt),Pazhamudhircholai(Madurai Distt) and Thirutthani(Thiruvallur Distt)</p>
+<button id="b2">USE TOGGLE</button>
+
+<p id="id3">Chain Function is used here<br>Indian Railways(IR) is the world's largest employer also the 2nd largest network in Asia.This is divided into 17 zones.<br>Indian railway history can be traced back to the 1st ever train of India that ran between Bori Bunder(Mumbai CSMT) to Thane on 16th April 1853.</p>
+<button id="b3">USE CHAIN FUNCTION</button>
+
+<p id="i4">Call Back Function is used here<br>54-Poonamallee to High Court<br>Via-Central,Simpson,DMS,Saidapet,Guindy,Butt Road,Ramapuram,Mugalivakkam,Porur,Iyyapanthangal,Kumananchavadi</p>
+<button id="b4">CALL BACK FUNCTION</button>
+
+</body>
+</html>
